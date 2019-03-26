@@ -1,0 +1,54 @@
+plugins {
+    id 'java'
+    id 'com.gradle.build-scan' version '1.16'
+    id 'org.springframework.boot' version '2.0.5.RELEASE'
+}
+
+group 'com.betPawa.wallet'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+sourceSets {
+
+    integrationTest {
+        java {
+            compileClasspath += main.output + test.output
+            runtimeClasspath += main.output + test.output
+            srcDir file('src/test/java')
+        }
+        resources.srcDir file('src/test/resources')
+    }
+}
+
+task integrationTest(type: Test) {
+    testClassesDirs = sourceSets.test.output.classesDirs
+    classpath = sourceSets.test.runtimeClasspath
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile 'org.springframework.boot:spring-boot-starter-test:2.0.3.RELEASE'
+
+    compile 'io.grpc:grpc-netty-shaded:1.19.0'
+    compile 'io.grpc:grpc-protobuf:1.19.0'
+    compile 'io.grpc:grpc-stub:1.19.0'
+
+    compile 'org.springframework.boot:spring-boot-dependencies:2.0.5.RELEASE'
+    compile 'org.springframework.boot:spring-boot-starter-web:2.0.3.RELEASE'
+
+    // Use MySQL Connector-J
+    compile 'mysql:mysql-connector-java:8.0.13'
+
+    compile 'org.springframework.boot:spring-boot-starter-data-jpa:2.0.3.RELEASE'
+
+    compile 'org.json:json:20171018'
+
+    compile group: 'org.slf4j', name:'slf4j-api', version: '1.7.2'
+    compile group: 'ch.qos.logback', name:'logback-classic', version: '1.0.9'
+    compile group: 'ch.qos.logback', name:'logback-core', version: '1.0.9'
+}
