@@ -1,8 +1,15 @@
 syntax = "proto3";
+
 option java_multiple_files = true;
-package betPawa.wallet.grpc;
+option java_package = "io.grpc";
+
+package grps;
 
 import "google/protobuf/empty.proto";
+
+service WalletService {
+    rpc getBalance(UserId) returns (Funds) {}
+}
 
 message WalletRequest {
     int32 userId = 1;
@@ -25,6 +32,6 @@ message Funds {
     Currency currency = 2;
 }
 
-service WalletService {
-    rpc getFundsByUserId(google.protobuf.Empty) returns (Funds) {}
+message UserId {
+    int64 userId = 1;
 }
