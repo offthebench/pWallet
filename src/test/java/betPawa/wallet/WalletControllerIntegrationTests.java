@@ -1,10 +1,16 @@
 package betPawa.wallet;
 
+import betPawa.wallet.controller.UserController;
+import betPawa.wallet.repository.UserRepository;
+import betPawa.wallet.service.UserService;
 import betPawa.wallet.user.DepositRequest;
+import betPawa.wallet.user.User;
 import org.json.JSONException;
+import org.json.JSONObject;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.skyscreamer.jsonassert.JSONAssert;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.boot.web.server.LocalServerPort;
@@ -28,10 +34,13 @@ public class WalletControllerIntegrationTests {
 
     HttpHeaders headers = new HttpHeaders();
 
+    private Long userId = 1L;
+
+
     @Test
     public void testCase1() throws JSONException {
 
-        DepositRequest depositRequest = new DepositRequest(1L, 200.00, "USD");
+        DepositRequest depositRequest = new DepositRequest(userId, 200.00, "USD");
 
         HttpEntity<DepositRequest> entity = new HttpEntity<DepositRequest>(depositRequest, headers);
 
@@ -49,7 +58,7 @@ public class WalletControllerIntegrationTests {
     @Test
     public void testCase2() throws JSONException {
 
-        DepositRequest depositRequest = new DepositRequest(1L, 100.00, "USD");
+        DepositRequest depositRequest = new DepositRequest(userId, 100.00, "USD");
 
         HttpEntity<DepositRequest> entity = new HttpEntity<DepositRequest>(depositRequest, headers);
 
@@ -92,7 +101,7 @@ public class WalletControllerIntegrationTests {
     @Test
     public void testCase4() throws JSONException {
 
-        DepositRequest depositRequest = new DepositRequest(1L, 200.00, "USD");
+        DepositRequest depositRequest = new DepositRequest(userId, 200.00, "USD");
 
         HttpEntity<DepositRequest> entity = new HttpEntity<DepositRequest>(depositRequest, headers);
 
@@ -110,7 +119,7 @@ public class WalletControllerIntegrationTests {
     @Test
     public void testCase5() throws JSONException {
 
-        DepositRequest depositRequest = new DepositRequest(1L, 100.00, "EUR");
+        DepositRequest depositRequest = new DepositRequest(userId, 100.00, "EUR");
 
         HttpEntity<DepositRequest> entity = new HttpEntity<DepositRequest>(depositRequest, headers);
 
@@ -153,7 +162,7 @@ public class WalletControllerIntegrationTests {
     @Test
     public void testCase7() throws JSONException {
 
-        DepositRequest depositRequest = new DepositRequest(1L, 200.00, "USD");
+        DepositRequest depositRequest = new DepositRequest(userId, 200.00, "USD");
 
         HttpEntity<DepositRequest> entity = new HttpEntity<DepositRequest>(depositRequest, headers);
 
@@ -171,7 +180,7 @@ public class WalletControllerIntegrationTests {
     @Test
     public void testCase8() throws JSONException {
 
-        DepositRequest depositRequest = new DepositRequest(1L, 100.00, "USD");
+        DepositRequest depositRequest = new DepositRequest(userId, 100.00, "USD");
 
         HttpEntity<DepositRequest> entity = new HttpEntity<DepositRequest>(depositRequest, headers);
 
@@ -201,7 +210,7 @@ public class WalletControllerIntegrationTests {
     @Test
     public void testCase10() throws JSONException {
 
-        DepositRequest depositRequest = new DepositRequest(1L, 200.00, "USD");
+        DepositRequest depositRequest = new DepositRequest(userId, 200.00, "USD");
 
         HttpEntity<DepositRequest> entity = new HttpEntity<DepositRequest>(depositRequest, headers);
 
@@ -246,7 +255,7 @@ public class WalletControllerIntegrationTests {
     @Test
     public void testCase12() throws JSONException {
 
-        DepositRequest depositRequest = new DepositRequest(1L, 200.00, "USD");
+        DepositRequest depositRequest = new DepositRequest(userId, 200.00, "USD");
 
         HttpEntity<DepositRequest> entity = new HttpEntity<DepositRequest>(depositRequest, headers);
 

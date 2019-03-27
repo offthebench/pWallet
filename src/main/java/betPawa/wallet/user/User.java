@@ -18,6 +18,12 @@ import java.util.Date;
         allowGetters = true)
 public class User {
 
+
+
+    public User(@NotBlank String name) {
+        this.name = name;
+    }
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

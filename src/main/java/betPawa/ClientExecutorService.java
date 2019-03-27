@@ -1,6 +1,5 @@
 package betPawa;
 
-import com.google.gson.JsonObject;
 import org.json.JSONObject;
 
 import java.io.*;
@@ -56,8 +55,8 @@ public class ClientExecutorService {
             connection.setRequestProperty("Accept", "application/json");
 //            connection.connect();
 
-            JsonObject payload = new JsonObject();
-            payload.addProperty("name","adm");
+            JSONObject payload = new JSONObject();
+            payload.put("name","adm");
 
             OutputStream os = connection.getOutputStream();
             os.write(payload.toString().getBytes("UTF-8"));
