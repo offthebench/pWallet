@@ -8982,3 +8982,1668 @@ Unconditional classes:
 09:43:17.392 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m50s285ms).
 09:53:37.925 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m50s518ms).
 09:55:43.554 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m5s629ms).
+15:29:12.033 [main] INFO  betPawa.wallet.Application - Starting Application on 172-11-17-92.lightspeed.irvnca.sbcglobal.net with PID 26529 (/Users/akshaysaxena/Dev/learning/pWallet/build/classes/java/main started by akshaysaxena in /Users/akshaysaxena/Dev/learning/pWallet)
+15:29:12.036 [main] INFO  betPawa.wallet.Application - No active profile set, falling back to default profiles: default
+15:29:12.093 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@433d61fb: startup date [Tue Mar 26 15:29:12 IST 2019]; root of context hierarchy
+15:29:13.134 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$42a62c85] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+15:29:13.397 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+15:29:13.411 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+15:29:13.421 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+15:29:13.421 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+15:29:13.431 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/akshaysaxena/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+15:29:13.519 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+15:29:13.519 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1426 ms
+15:29:13.637 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+15:29:13.640 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+15:29:13.640 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+15:29:13.640 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+15:29:13.640 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+15:29:13.887 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+15:29:13.891 [main] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+15:29:15.038 [main] ERROR com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Exception during pool initialization.
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:117)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:123)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:365)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:194)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:460)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:534)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:151)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:78)
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:319)
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:356)
+	at org.springframework.boot.autoconfigure.orm.jpa.DatabaseLookup.getDatabase(DatabaseLookup.java:72)
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaProperties.determineDatabase(JpaProperties.java:166)
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.jpaVendorAdapter(JpaBaseConfiguration.java:111)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration$$EnhancerBySpringCGLIB$$617ceef4.CGLIB$jpaVendorAdapter$5(<generated>)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration$$EnhancerBySpringCGLIB$$617ceef4$$FastClassBySpringCGLIB$$eb6cf664.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:361)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration$$EnhancerBySpringCGLIB$$617ceef4.jpaVendorAdapter(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1256)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1105)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:503)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:818)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:724)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:474)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1256)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1105)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:503)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:818)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:724)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:474)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1256)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1105)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:503)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1089)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:859)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
+	at betPawa.wallet.Application.main(Application.java:13)
+15:29:15.040 [main] WARN  o.s.b.a.orm.jpa.DatabaseLookup - Unable to determine jdbc url from datasource
+org.springframework.jdbc.support.MetaDataAccessException: Could not get Connection for extracting meta-data; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:328)
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:356)
+	at org.springframework.boot.autoconfigure.orm.jpa.DatabaseLookup.getDatabase(DatabaseLookup.java:72)
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaProperties.determineDatabase(JpaProperties.java:166)
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.jpaVendorAdapter(JpaBaseConfiguration.java:111)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration$$EnhancerBySpringCGLIB$$617ceef4.CGLIB$jpaVendorAdapter$5(<generated>)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration$$EnhancerBySpringCGLIB$$617ceef4$$FastClassBySpringCGLIB$$eb6cf664.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:361)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration$$EnhancerBySpringCGLIB$$617ceef4.jpaVendorAdapter(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1256)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1105)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:503)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:818)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:724)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:474)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1256)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1105)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:503)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:818)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:724)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:474)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1256)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1105)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:503)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1089)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:859)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
+	at betPawa.wallet.Application.main(Application.java:13)
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:81)
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:319)
+	... 61 common frames omitted
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:117)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:123)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:365)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:194)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:460)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:534)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:151)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:78)
+	... 62 common frames omitted
+15:29:15.078 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+15:29:15.094 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+15:29:15.165 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.17.Final}
+15:29:15.167 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+15:29:15.206 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+15:29:15.382 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+15:29:15.383 [main] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+15:29:16.389 [main] ERROR com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Exception during pool initialization.
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:117)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:123)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:365)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:194)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:460)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:534)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:88)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:259)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:233)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:210)
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:51)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:94)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:242)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:210)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.handleTypes(MetadataBuildingProcess.java:352)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:111)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:861)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:888)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1767)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1704)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:581)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:503)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1089)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:859)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
+	at betPawa.wallet.Application.main(Application.java:13)
+15:29:16.390 [main] WARN  o.h.e.j.e.i.JdbcEnvironmentInitiator - HHH000342: Could not obtain connection to query metadata : Access denied for user 'root'@'localhost' (using password: YES)
+15:29:16.404 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+15:29:16.419 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl - HHH000422: Disabling contextual LOB creation as connection was null
+15:29:16.937 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+15:29:16.937 [main] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+15:29:17.943 [main] ERROR com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Exception during pool initialization.
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:117)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:123)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:365)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:194)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:460)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:534)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:43)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:60)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcDatabaseMetaData(ImprovedExtractionContextImpl.java:67)
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.getTables(InformationExtractorJdbcDatabaseMetaDataImpl.java:329)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.getTablesInformation(DatabaseInformationImpl.java:120)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:65)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:207)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:114)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:183)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:72)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:312)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:462)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:892)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1767)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1704)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:581)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:503)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1089)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:859)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
+	at betPawa.wallet.Application.main(Application.java:13)
+15:29:17.945 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1045, SQLState: 28000
+15:29:17.945 [main] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Access denied for user 'root'@'localhost' (using password: YES)
+15:29:17.947 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution
+15:29:17.951 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+15:29:17.965 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+15:29:17.967 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1708)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:581)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:503)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1089)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:859)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
+	at betPawa.wallet.Application.main(Application.java:13)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:402)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1767)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1704)
+	... 16 common frames omitted
+Caused by: org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:47)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:111)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:97)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:69)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:60)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcDatabaseMetaData(ImprovedExtractionContextImpl.java:67)
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.getTables(InformationExtractorJdbcDatabaseMetaDataImpl.java:329)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.getTablesInformation(DatabaseInformationImpl.java:120)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:65)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:207)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:114)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:183)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:72)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:312)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:462)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:892)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390)
+	... 20 common frames omitted
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:117)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:123)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:365)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:194)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:460)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:534)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:43)
+	... 35 common frames omitted
+15:30:13.131 [main] INFO  betPawa.wallet.Application - Starting Application on 172-11-17-92.lightspeed.irvnca.sbcglobal.net with PID 26561 (/Users/akshaysaxena/Dev/learning/pWallet/build/classes/java/main started by akshaysaxena in /Users/akshaysaxena/Dev/learning/pWallet)
+15:30:13.134 [main] INFO  betPawa.wallet.Application - No active profile set, falling back to default profiles: default
+15:30:13.187 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6e0dec4a: startup date [Tue Mar 26 15:30:13 IST 2019]; root of context hierarchy
+15:30:14.226 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$299fb70d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+15:30:14.559 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+15:30:14.575 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+15:30:14.584 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+15:30:14.584 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+15:30:14.594 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/akshaysaxena/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+15:30:14.676 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+15:30:14.676 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1489 ms
+15:30:14.786 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+15:30:14.789 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+15:30:14.789 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+15:30:14.789 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+15:30:14.789 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+15:30:14.958 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+15:30:14.962 [main] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+15:30:16.197 [main] ERROR com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Exception during pool initialization.
+java.sql.SQLSyntaxErrorException: Unknown database 'betpawa'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:117)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:123)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:365)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:194)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:460)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:534)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:151)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:78)
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:319)
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:356)
+	at org.springframework.boot.autoconfigure.orm.jpa.DatabaseLookup.getDatabase(DatabaseLookup.java:72)
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaProperties.determineDatabase(JpaProperties.java:166)
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.jpaVendorAdapter(JpaBaseConfiguration.java:111)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration$$EnhancerBySpringCGLIB$$4876797c.CGLIB$jpaVendorAdapter$8(<generated>)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration$$EnhancerBySpringCGLIB$$4876797c$$FastClassBySpringCGLIB$$8b668600.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:361)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration$$EnhancerBySpringCGLIB$$4876797c.jpaVendorAdapter(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1256)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1105)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:503)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:818)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:724)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:474)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1256)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1105)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:503)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:818)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:724)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:474)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1256)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1105)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:503)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1089)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:859)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
+	at betPawa.wallet.Application.main(Application.java:13)
+15:30:16.199 [main] WARN  o.s.b.a.orm.jpa.DatabaseLookup - Unable to determine jdbc url from datasource
+org.springframework.jdbc.support.MetaDataAccessException: Could not get Connection for extracting meta-data; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLSyntaxErrorException: Unknown database 'betpawa'
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:328)
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:356)
+	at org.springframework.boot.autoconfigure.orm.jpa.DatabaseLookup.getDatabase(DatabaseLookup.java:72)
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaProperties.determineDatabase(JpaProperties.java:166)
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.jpaVendorAdapter(JpaBaseConfiguration.java:111)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration$$EnhancerBySpringCGLIB$$4876797c.CGLIB$jpaVendorAdapter$8(<generated>)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration$$EnhancerBySpringCGLIB$$4876797c$$FastClassBySpringCGLIB$$8b668600.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:361)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration$$EnhancerBySpringCGLIB$$4876797c.jpaVendorAdapter(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1256)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1105)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:503)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:818)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:724)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:474)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1256)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1105)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:503)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:818)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:724)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:474)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1256)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1105)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:503)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1089)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:859)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
+	at betPawa.wallet.Application.main(Application.java:13)
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLSyntaxErrorException: Unknown database 'betpawa'
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:81)
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:319)
+	... 61 common frames omitted
+Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'betpawa'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:117)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:123)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:365)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:194)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:460)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:534)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:151)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:78)
+	... 62 common frames omitted
+15:30:16.233 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+15:30:16.251 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+15:30:16.315 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.17.Final}
+15:30:16.317 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+15:30:16.351 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+15:30:16.502 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+15:30:16.502 [main] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+15:30:17.507 [main] ERROR com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Exception during pool initialization.
+java.sql.SQLSyntaxErrorException: Unknown database 'betpawa'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:117)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:123)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:365)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:194)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:460)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:534)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:88)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:259)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:233)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:210)
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:51)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:94)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:242)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:210)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.handleTypes(MetadataBuildingProcess.java:352)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:111)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:861)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:888)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1767)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1704)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:581)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:503)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1089)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:859)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
+	at betPawa.wallet.Application.main(Application.java:13)
+15:30:17.508 [main] WARN  o.h.e.j.e.i.JdbcEnvironmentInitiator - HHH000342: Could not obtain connection to query metadata : Unknown database 'betpawa'
+15:30:17.523 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+15:30:17.538 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl - HHH000422: Disabling contextual LOB creation as connection was null
+15:30:18.069 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+15:30:18.069 [main] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+15:30:19.074 [main] ERROR com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Exception during pool initialization.
+java.sql.SQLSyntaxErrorException: Unknown database 'betpawa'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:117)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:123)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:365)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:194)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:460)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:534)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:43)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:60)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcDatabaseMetaData(ImprovedExtractionContextImpl.java:67)
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.getTables(InformationExtractorJdbcDatabaseMetaDataImpl.java:329)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.getTablesInformation(DatabaseInformationImpl.java:120)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:65)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:207)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:114)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:183)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:72)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:312)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:462)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:892)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1767)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1704)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:581)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:503)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1089)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:859)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
+	at betPawa.wallet.Application.main(Application.java:13)
+15:30:19.076 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1049, SQLState: 42000
+15:30:19.076 [main] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Unknown database 'betpawa'
+15:30:19.078 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution
+15:30:19.082 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+15:30:19.094 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+15:30:19.096 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1708)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:581)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:503)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1089)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:859)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
+	at betPawa.wallet.Application.main(Application.java:13)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:402)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1767)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1704)
+	... 16 common frames omitted
+Caused by: org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:63)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:111)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:97)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:69)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:60)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcDatabaseMetaData(ImprovedExtractionContextImpl.java:67)
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.getTables(InformationExtractorJdbcDatabaseMetaDataImpl.java:329)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.getTablesInformation(DatabaseInformationImpl.java:120)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:65)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:207)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:114)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:183)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:72)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:312)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:462)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:892)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390)
+	... 20 common frames omitted
+Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'betpawa'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:117)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:123)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:365)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:194)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:460)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:534)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:43)
+	... 35 common frames omitted
+15:30:56.017 [main] INFO  betPawa.wallet.Application - Starting Application on 172-11-17-92.lightspeed.irvnca.sbcglobal.net with PID 26596 (/Users/akshaysaxena/Dev/learning/pWallet/build/classes/java/main started by akshaysaxena in /Users/akshaysaxena/Dev/learning/pWallet)
+15:30:56.020 [main] INFO  betPawa.wallet.Application - No active profile set, falling back to default profiles: default
+15:30:56.069 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4ddced80: startup date [Tue Mar 26 15:30:56 IST 2019]; root of context hierarchy
+15:30:57.128 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4a5366ed] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+15:30:57.444 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+15:30:57.458 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+15:30:57.468 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+15:30:57.468 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+15:30:57.477 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/akshaysaxena/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+15:30:57.562 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+15:30:57.563 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1494 ms
+15:30:57.684 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+15:30:57.690 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+15:30:57.690 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+15:30:57.690 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+15:30:57.690 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+15:30:57.959 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+15:30:57.963 [main] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+15:30:58.112 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+15:30:58.146 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+15:30:58.162 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+15:30:58.246 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.17.Final}
+15:30:58.247 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+15:30:58.287 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+15:30:58.405 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+15:30:59.110 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+15:30:59.529 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+15:30:59.800 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4ddced80: startup date [Tue Mar 26 15:30:56 IST 2019]; root of context hierarchy
+15:30:59.848 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+15:30:59.883 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/users],methods=[GET]}" onto public java.util.List<betPawa.wallet.user.User> betPawa.wallet.controller.UserController.getAllUsers()
+15:30:59.884 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/users],methods=[POST]}" onto public betPawa.wallet.user.User betPawa.wallet.controller.UserController.createUser(betPawa.wallet.user.User)
+15:30:59.884 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/get/{id}],methods=[GET]}" onto public betPawa.wallet.user.User betPawa.wallet.controller.UserController.getUserById(java.lang.Long)
+15:30:59.887 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/betpawa/wallet/deposit],methods=[POST]}" onto public void betPawa.wallet.controller.WalletController.depositUserWallet(betPawa.wallet.user.DepositRequest)
+15:30:59.887 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/betpawa/wallet/deposit],methods=[GET]}" onto public void betPawa.wallet.controller.WalletController.depositUserWallet(java.lang.Long,java.lang.Double,java.lang.String)
+15:30:59.888 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/betpawa/wallet/withdraw],methods=[GET]}" onto public betPawa.wallet.response.SuccessResponse betPawa.wallet.controller.WalletController.withdrawUserWallet(java.lang.Long,java.lang.Double,java.lang.String)
+15:30:59.888 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/betpawa/wallet/withdraw],methods=[POST]}" onto public betPawa.wallet.response.SuccessResponse betPawa.wallet.controller.WalletController.withdrawUserWallet(betPawa.wallet.user.DepositRequest)
+15:30:59.889 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/betpawa/wallet/balance],methods=[GET]}" onto public java.util.List<betPawa.wallet.model.Funds> betPawa.wallet.controller.WalletController.getFundsByUserId(java.lang.Long)
+15:30:59.892 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+15:30:59.892 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+15:30:59.924 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+15:30:59.925 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+15:30:59.940 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in customizedResponseEntityExceptionHandler
+15:31:00.238 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+15:31:00.239 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+15:31:00.244 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+15:31:00.254 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+15:31:00.275 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+15:31:00.286 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+15:31:00.289 [main] INFO  betPawa.wallet.Application - Started Application in 4.553 seconds (JVM running for 5.033)
+15:32:49.894 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+15:32:49.900 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+15:32:49.918 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+15:32:50.048 [http-nio-8080-exec-1] INFO  b.wallet.controller.UserController - /user API executing...
+15:32:50.048 [http-nio-8080-exec-1] INFO  b.wallet.controller.UserController - Initialising empty wallet for the user..
+15:32:50.049 [http-nio-8080-exec-1] INFO  b.wallet.controller.UserController - Initialising available currencies..
+15:32:50.049 [http-nio-8080-exec-1] INFO  b.wallet.controller.UserController - Initialised empty wallet for the user.
+15:32:50.049 [http-nio-8080-exec-1] INFO  b.wallet.controller.UserController - Creating user.
+15:32:50.364 [http-nio-8080-exec-7] INFO  b.wallet.controller.WalletController - /balance API executing...
+15:32:50.364 [http-nio-8080-exec-7] INFO  b.w.service.impl.WalletServiceImpl - balanceService started
+15:32:50.366 [http-nio-8080-exec-4] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:50.366 [http-nio-8080-exec-10] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:50.367 [http-nio-8080-exec-3] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:50.367 [http-nio-8080-exec-9] INFO  b.wallet.controller.WalletController - /deposit API executing...
+15:32:50.367 [http-nio-8080-exec-4] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:50.367 [http-nio-8080-exec-8] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:50.367 [http-nio-8080-exec-9] INFO  b.w.service.impl.WalletServiceImpl - depositService started
+15:32:50.367 [http-nio-8080-exec-8] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:50.367 [http-nio-8080-exec-10] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:50.367 [http-nio-8080-exec-5] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:50.367 [http-nio-8080-exec-2] INFO  b.wallet.controller.WalletController - /deposit API executing...
+15:32:50.367 [http-nio-8080-exec-3] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:50.368 [http-nio-8080-exec-2] INFO  b.w.service.impl.WalletServiceImpl - depositService started
+15:32:50.368 [http-nio-8080-exec-5] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:50.368 [http-nio-8080-exec-6] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:50.368 [http-nio-8080-exec-6] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:50.372 [http-nio-8080-exec-1] INFO  b.wallet.controller.WalletController - /deposit API executing...
+15:32:50.372 [http-nio-8080-exec-1] INFO  b.w.service.impl.WalletServiceImpl - depositService started
+15:32:50.380 [http-nio-8080-exec-7] INFO  b.w.service.impl.WalletServiceImpl - fetching Wallet for userID: 1
+15:32:50.380 [http-nio-8080-exec-7] INFO  b.w.service.impl.WalletServiceImpl - balanceService completed
+15:32:50.423 [http-nio-8080-exec-7] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+15:32:50.566 [http-nio-8080-exec-11] INFO  b.wallet.controller.WalletController - /balance API executing...
+15:32:50.566 [http-nio-8080-exec-11] INFO  b.w.service.impl.WalletServiceImpl - balanceService started
+15:32:50.567 [http-nio-8080-exec-7] INFO  b.wallet.controller.WalletController - /deposit API executing...
+15:32:50.568 [http-nio-8080-exec-7] INFO  b.w.service.impl.WalletServiceImpl - depositService started
+15:32:50.568 [http-nio-8080-exec-3] INFO  b.wallet.controller.WalletController - /balance API executing...
+15:32:50.568 [http-nio-8080-exec-3] INFO  b.w.service.impl.WalletServiceImpl - balanceService started
+15:32:50.568 [http-nio-8080-exec-4] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:50.569 [http-nio-8080-exec-4] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:50.569 [http-nio-8080-exec-10] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:50.569 [http-nio-8080-exec-10] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:50.570 [http-nio-8080-exec-5] INFO  b.wallet.controller.WalletController - /deposit API executing...
+15:32:50.570 [http-nio-8080-exec-5] INFO  b.w.service.impl.WalletServiceImpl - depositService started
+15:32:50.574 [http-nio-8080-exec-11] INFO  b.w.service.impl.WalletServiceImpl - fetching Wallet for userID: 1
+15:32:50.574 [http-nio-8080-exec-11] INFO  b.w.service.impl.WalletServiceImpl - balanceService completed
+15:32:50.575 [http-nio-8080-exec-3] INFO  b.w.service.impl.WalletServiceImpl - fetching Wallet for userID: 1
+15:32:50.575 [http-nio-8080-exec-3] INFO  b.w.service.impl.WalletServiceImpl - balanceService completed
+15:32:50.578 [http-nio-8080-exec-9] INFO  b.w.service.impl.WalletServiceImpl - depositService completed
+15:32:50.578 [http-nio-8080-exec-9] INFO  b.wallet.controller.WalletController - /deposit API executed.
+15:32:50.579 [http-nio-8080-exec-2] INFO  b.w.service.impl.WalletServiceImpl - depositService completed
+15:32:50.579 [http-nio-8080-exec-2] INFO  b.wallet.controller.WalletController - /deposit API executed.
+15:32:50.589 [http-nio-8080-exec-9] INFO  b.wallet.controller.WalletController - /deposit API executing...
+15:32:50.591 [http-nio-8080-exec-6] INFO  b.wallet.controller.WalletController - /balance API executing...
+15:32:50.599 [http-nio-8080-exec-9] INFO  b.w.service.impl.WalletServiceImpl - depositService started
+15:32:50.599 [http-nio-8080-exec-6] INFO  b.w.service.impl.WalletServiceImpl - balanceService started
+15:32:50.593 [http-nio-8080-exec-2] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:50.599 [http-nio-8080-exec-2] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:50.597 [http-nio-8080-exec-5] INFO  b.w.service.impl.WalletServiceImpl - depositService completed
+15:32:50.600 [http-nio-8080-exec-5] INFO  b.wallet.controller.WalletController - /deposit API executed.
+15:32:50.598 [http-nio-8080-exec-10] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService completed
+15:32:50.598 [http-nio-8080-exec-3] INFO  b.wallet.controller.WalletController - /balance API executing...
+15:32:50.601 [http-nio-8080-exec-3] INFO  b.w.service.impl.WalletServiceImpl - balanceService started
+15:32:50.604 [http-nio-8080-exec-7] INFO  b.w.service.impl.WalletServiceImpl - depositService completed
+15:32:50.604 [http-nio-8080-exec-7] INFO  b.wallet.controller.WalletController - /deposit API executed.
+15:32:50.605 [http-nio-8080-exec-6] INFO  b.w.service.impl.WalletServiceImpl - fetching Wallet for userID: 1
+15:32:50.606 [http-nio-8080-exec-6] INFO  b.w.service.impl.WalletServiceImpl - balanceService completed
+15:32:50.606 [http-nio-8080-exec-4] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:50.606 [http-nio-8080-exec-8] INFO  b.wallet.controller.WalletController - /deposit API executing...
+15:32:50.606 [http-nio-8080-exec-4] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:50.606 [http-nio-8080-exec-11] INFO  b.wallet.controller.WalletController - /deposit API executing...
+15:32:50.607 [http-nio-8080-exec-8] INFO  b.w.service.impl.WalletServiceImpl - depositService started
+15:32:50.607 [http-nio-8080-exec-11] INFO  b.w.service.impl.WalletServiceImpl - depositService started
+15:32:50.607 [http-nio-8080-exec-3] INFO  b.w.service.impl.WalletServiceImpl - fetching Wallet for userID: 1
+15:32:50.607 [http-nio-8080-exec-3] INFO  b.w.service.impl.WalletServiceImpl - balanceService completed
+15:32:50.610 [http-nio-8080-exec-5] INFO  b.wallet.controller.WalletController - /balance API executing...
+15:32:50.610 [http-nio-8080-exec-5] INFO  b.w.service.impl.WalletServiceImpl - balanceService started
+15:32:50.611 [http-nio-8080-exec-10] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:50.611 [http-nio-8080-exec-10] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:50.616 [http-nio-8080-exec-5] INFO  b.w.service.impl.WalletServiceImpl - fetching Wallet for userID: 1
+15:32:50.617 [http-nio-8080-exec-5] INFO  b.w.service.impl.WalletServiceImpl - balanceService completed
+15:32:50.617 [http-nio-8080-exec-7] INFO  b.wallet.controller.WalletController - /balance API executing...
+15:32:50.617 [http-nio-8080-exec-7] INFO  b.w.service.impl.WalletServiceImpl - balanceService started
+15:32:50.619 [http-nio-8080-exec-6] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:50.619 [http-nio-8080-exec-6] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:50.619 [http-nio-8080-exec-9] INFO  b.w.service.impl.WalletServiceImpl - depositService completed
+15:32:50.619 [http-nio-8080-exec-9] INFO  b.wallet.controller.WalletController - /deposit API executed.
+15:32:50.620 [http-nio-8080-exec-2] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService completed
+15:32:50.621 [http-nio-8080-exec-11] INFO  b.w.service.impl.WalletServiceImpl - depositService completed
+15:32:50.621 [http-nio-8080-exec-11] INFO  b.wallet.controller.WalletController - /deposit API executed.
+15:32:50.621 [http-nio-8080-exec-8] INFO  b.w.service.impl.WalletServiceImpl - depositService completed
+15:32:50.622 [http-nio-8080-exec-8] INFO  b.wallet.controller.WalletController - /deposit API executed.
+15:32:50.623 [http-nio-8080-exec-4] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService completed
+15:32:50.624 [http-nio-8080-exec-7] INFO  b.w.service.impl.WalletServiceImpl - fetching Wallet for userID: 1
+15:32:50.625 [http-nio-8080-exec-7] INFO  b.w.service.impl.WalletServiceImpl - balanceService completed
+15:32:50.626 [http-nio-8080-exec-8] INFO  b.wallet.controller.WalletController - /balance API executing...
+15:32:50.626 [http-nio-8080-exec-9] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:50.626 [http-nio-8080-exec-8] INFO  b.w.service.impl.WalletServiceImpl - balanceService started
+15:32:50.627 [http-nio-8080-exec-9] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:50.628 [http-nio-8080-exec-2] INFO  b.wallet.controller.WalletController - /deposit API executing...
+15:32:50.629 [http-nio-8080-exec-2] INFO  b.w.service.impl.WalletServiceImpl - depositService started
+15:32:50.629 [http-nio-8080-exec-11] INFO  b.wallet.controller.WalletController - /deposit API executing...
+15:32:50.629 [http-nio-8080-exec-3] INFO  b.wallet.controller.WalletController - /deposit API executing...
+15:32:50.629 [http-nio-8080-exec-11] INFO  b.w.service.impl.WalletServiceImpl - depositService started
+15:32:50.629 [http-nio-8080-exec-8] INFO  b.w.service.impl.WalletServiceImpl - fetching Wallet for userID: 1
+15:32:50.629 [http-nio-8080-exec-8] INFO  b.w.service.impl.WalletServiceImpl - balanceService completed
+15:32:50.629 [http-nio-8080-exec-3] INFO  b.w.service.impl.WalletServiceImpl - depositService started
+15:32:50.632 [http-nio-8080-exec-5] INFO  b.wallet.controller.WalletController - /balance API executing...
+15:32:50.632 [http-nio-8080-exec-5] INFO  b.w.service.impl.WalletServiceImpl - balanceService started
+15:32:50.633 [http-nio-8080-exec-10] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:50.634 [http-nio-8080-exec-10] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:50.635 [http-nio-8080-exec-4] INFO  b.wallet.controller.WalletController - /balance API executing...
+15:32:50.635 [http-nio-8080-exec-5] INFO  b.w.service.impl.WalletServiceImpl - fetching Wallet for userID: 1
+15:32:50.635 [http-nio-8080-exec-4] INFO  b.w.service.impl.WalletServiceImpl - balanceService started
+15:32:50.635 [http-nio-8080-exec-5] INFO  b.w.service.impl.WalletServiceImpl - balanceService completed
+15:32:50.639 [http-nio-8080-exec-4] INFO  b.w.service.impl.WalletServiceImpl - fetching Wallet for userID: 1
+15:32:50.639 [http-nio-8080-exec-4] INFO  b.w.service.impl.WalletServiceImpl - balanceService completed
+15:32:50.644 [http-nio-8080-exec-3] INFO  b.w.service.impl.WalletServiceImpl - depositService completed
+15:32:50.645 [http-nio-8080-exec-3] INFO  b.wallet.controller.WalletController - /deposit API executed.
+15:32:50.645 [http-nio-8080-exec-2] INFO  b.w.service.impl.WalletServiceImpl - depositService completed
+15:32:50.645 [http-nio-8080-exec-2] INFO  b.wallet.controller.WalletController - /deposit API executed.
+15:32:50.645 [http-nio-8080-exec-11] INFO  b.w.service.impl.WalletServiceImpl - depositService completed
+15:32:50.645 [http-nio-8080-exec-11] INFO  b.wallet.controller.WalletController - /deposit API executed.
+15:32:50.650 [http-nio-8080-exec-1] INFO  b.w.service.impl.WalletServiceImpl - depositService completed
+15:32:50.650 [http-nio-8080-exec-1] INFO  b.wallet.controller.WalletController - /deposit API executed.
+15:32:50.656 [http-nio-8080-exec-7] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:50.656 [http-nio-8080-exec-6] INFO  b.wallet.controller.WalletController - /deposit API executing...
+15:32:50.656 [http-nio-8080-exec-7] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:50.656 [http-nio-8080-exec-6] INFO  b.w.service.impl.WalletServiceImpl - depositService started
+15:32:50.657 [http-nio-8080-exec-9] INFO  b.wallet.controller.WalletController - /balance API executing...
+15:32:50.658 [http-nio-8080-exec-9] INFO  b.w.service.impl.WalletServiceImpl - balanceService started
+15:32:50.658 [http-nio-8080-exec-8] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:50.658 [http-nio-8080-exec-5] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:50.658 [http-nio-8080-exec-8] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:50.658 [http-nio-8080-exec-5] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:50.662 [http-nio-8080-exec-2] INFO  b.wallet.controller.WalletController - /balance API executing...
+15:32:50.662 [http-nio-8080-exec-3] INFO  b.wallet.controller.WalletController - /deposit API executing...
+15:32:50.662 [http-nio-8080-exec-3] INFO  b.w.service.impl.WalletServiceImpl - depositService started
+15:32:50.662 [http-nio-8080-exec-10] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:50.662 [http-nio-8080-exec-10] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:50.662 [http-nio-8080-exec-11] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:50.662 [http-nio-8080-exec-11] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:50.663 [http-nio-8080-exec-2] INFO  b.w.service.impl.WalletServiceImpl - balanceService started
+15:32:50.663 [http-nio-8080-exec-4] INFO  b.wallet.controller.WalletController - /deposit API executing...
+15:32:50.663 [http-nio-8080-exec-4] INFO  b.w.service.impl.WalletServiceImpl - depositService started
+15:32:50.664 [http-nio-8080-exec-9] INFO  b.w.service.impl.WalletServiceImpl - fetching Wallet for userID: 1
+15:32:50.664 [http-nio-8080-exec-9] INFO  b.w.service.impl.WalletServiceImpl - balanceService completed
+15:32:50.671 [http-nio-8080-exec-2] INFO  b.w.service.impl.WalletServiceImpl - fetching Wallet for userID: 1
+15:32:50.671 [http-nio-8080-exec-2] INFO  b.w.service.impl.WalletServiceImpl - balanceService completed
+15:32:50.673 [http-nio-8080-exec-9] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:50.674 [http-nio-8080-exec-9] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:50.678 [http-nio-8080-exec-6] INFO  b.w.service.impl.WalletServiceImpl - depositService completed
+15:32:50.678 [http-nio-8080-exec-6] INFO  b.wallet.controller.WalletController - /deposit API executed.
+15:32:50.679 [http-nio-8080-exec-5] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService completed
+15:32:50.683 [http-nio-8080-exec-5] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:50.683 [http-nio-8080-exec-5] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:50.683 [http-nio-8080-exec-3] INFO  b.w.service.impl.WalletServiceImpl - depositService completed
+15:32:50.683 [http-nio-8080-exec-3] INFO  b.wallet.controller.WalletController - /deposit API executed.
+15:32:50.685 [http-nio-8080-exec-10] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService completed
+15:32:50.686 [http-nio-8080-exec-3] INFO  b.wallet.controller.WalletController - /balance API executing...
+15:32:50.686 [http-nio-8080-exec-3] INFO  b.w.service.impl.WalletServiceImpl - balanceService started
+15:32:50.687 [http-nio-8080-exec-11] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService completed
+15:32:50.688 [http-nio-8080-exec-4] INFO  b.w.service.impl.WalletServiceImpl - depositService completed
+15:32:50.688 [http-nio-8080-exec-4] INFO  b.wallet.controller.WalletController - /deposit API executed.
+15:32:50.688 [http-nio-8080-exec-10] INFO  b.wallet.controller.WalletController - /deposit API executing...
+15:32:50.688 [http-nio-8080-exec-10] INFO  b.w.service.impl.WalletServiceImpl - depositService started
+15:32:50.691 [http-nio-8080-exec-4] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:50.691 [http-nio-8080-exec-11] INFO  b.wallet.controller.WalletController - /deposit API executing...
+15:32:50.691 [http-nio-8080-exec-11] INFO  b.w.service.impl.WalletServiceImpl - depositService started
+15:32:50.691 [http-nio-8080-exec-4] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:50.692 [http-nio-8080-exec-8] INFO  b.wallet.controller.WalletController - /deposit API executing...
+15:32:50.692 [http-nio-8080-exec-8] INFO  b.w.service.impl.WalletServiceImpl - depositService started
+15:32:50.693 [http-nio-8080-exec-3] INFO  b.w.service.impl.WalletServiceImpl - fetching Wallet for userID: 1
+15:32:50.693 [http-nio-8080-exec-3] INFO  b.w.service.impl.WalletServiceImpl - balanceService completed
+15:32:50.694 [http-nio-8080-exec-9] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService completed
+15:32:50.697 [http-nio-8080-exec-9] INFO  b.wallet.controller.WalletController - /balance API executing...
+15:32:50.697 [http-nio-8080-exec-9] INFO  b.w.service.impl.WalletServiceImpl - balanceService started
+15:32:50.700 [http-nio-8080-exec-5] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService completed
+15:32:50.703 [http-nio-8080-exec-3] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:50.703 [http-nio-8080-exec-3] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:50.704 [http-nio-8080-exec-4] INFO  b.wallet.controller.WalletController - /balance API executing...
+15:32:50.704 [http-nio-8080-exec-4] INFO  b.w.service.impl.WalletServiceImpl - balanceService started
+15:32:50.705 [http-nio-8080-exec-10] INFO  b.w.service.impl.WalletServiceImpl - depositService completed
+15:32:50.705 [http-nio-8080-exec-10] INFO  b.wallet.controller.WalletController - /deposit API executed.
+15:32:50.705 [http-nio-8080-exec-9] INFO  b.w.service.impl.WalletServiceImpl - fetching Wallet for userID: 1
+15:32:50.705 [http-nio-8080-exec-9] INFO  b.w.service.impl.WalletServiceImpl - balanceService completed
+15:32:50.705 [http-nio-8080-exec-5] INFO  b.wallet.controller.WalletController - /deposit API executing...
+15:32:50.706 [http-nio-8080-exec-5] INFO  b.w.service.impl.WalletServiceImpl - depositService started
+15:32:50.708 [http-nio-8080-exec-11] INFO  b.w.service.impl.WalletServiceImpl - depositService completed
+15:32:50.708 [http-nio-8080-exec-11] INFO  b.wallet.controller.WalletController - /deposit API executed.
+15:32:50.708 [http-nio-8080-exec-10] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:50.708 [http-nio-8080-exec-10] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:50.708 [http-nio-8080-exec-8] INFO  b.w.service.impl.WalletServiceImpl - depositService completed
+15:32:50.709 [http-nio-8080-exec-8] INFO  b.wallet.controller.WalletController - /deposit API executed.
+15:32:50.709 [http-nio-8080-exec-4] INFO  b.w.service.impl.WalletServiceImpl - fetching Wallet for userID: 1
+15:32:50.710 [http-nio-8080-exec-4] INFO  b.w.service.impl.WalletServiceImpl - balanceService completed
+15:32:50.711 [http-nio-8080-exec-11] INFO  b.wallet.controller.WalletController - /deposit API executing...
+15:32:50.711 [http-nio-8080-exec-11] INFO  b.w.service.impl.WalletServiceImpl - depositService started
+15:32:50.712 [http-nio-8080-exec-8] INFO  b.wallet.controller.WalletController - /balance API executing...
+15:32:50.712 [http-nio-8080-exec-8] INFO  b.w.service.impl.WalletServiceImpl - balanceService started
+15:32:50.714 [http-nio-8080-exec-8] INFO  b.w.service.impl.WalletServiceImpl - fetching Wallet for userID: 1
+15:32:50.714 [http-nio-8080-exec-8] INFO  b.w.service.impl.WalletServiceImpl - balanceService completed
+15:32:50.716 [http-nio-8080-exec-9] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:50.716 [http-nio-8080-exec-9] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:50.719 [http-nio-8080-exec-4] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:50.719 [http-nio-8080-exec-4] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:50.719 [http-nio-8080-exec-7] INFO  b.wallet.controller.WalletController - /deposit API executing...
+15:32:50.720 [http-nio-8080-exec-7] INFO  b.w.service.impl.WalletServiceImpl - depositService started
+15:32:50.724 [http-nio-8080-exec-2] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:50.724 [http-nio-8080-exec-2] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:50.726 [http-nio-8080-exec-1] INFO  b.wallet.controller.WalletController - /balance API executing...
+15:32:50.726 [http-nio-8080-exec-1] INFO  b.w.service.impl.WalletServiceImpl - balanceService started
+15:32:50.727 [http-nio-8080-exec-1] INFO  b.w.service.impl.WalletServiceImpl - fetching Wallet for userID: 1
+15:32:50.727 [http-nio-8080-exec-1] INFO  b.w.service.impl.WalletServiceImpl - balanceService completed
+15:32:50.731 [http-nio-8080-exec-6] INFO  b.wallet.controller.WalletController - /deposit API executing...
+15:32:50.731 [http-nio-8080-exec-6] INFO  b.w.service.impl.WalletServiceImpl - depositService started
+15:32:50.736 [http-nio-8080-exec-1] INFO  b.wallet.controller.WalletController - /balance API executing...
+15:32:50.736 [http-nio-8080-exec-1] INFO  b.w.service.impl.WalletServiceImpl - balanceService started
+15:32:50.736 [http-nio-8080-exec-7] INFO  b.w.service.impl.WalletServiceImpl - depositService completed
+15:32:50.736 [http-nio-8080-exec-5] INFO  b.w.service.impl.WalletServiceImpl - depositService completed
+15:32:50.737 [http-nio-8080-exec-7] INFO  b.wallet.controller.WalletController - /deposit API executed.
+15:32:50.737 [http-nio-8080-exec-2] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:50.737 [http-nio-8080-exec-2] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:50.738 [http-nio-8080-exec-1] INFO  b.w.service.impl.WalletServiceImpl - fetching Wallet for userID: 1
+15:32:50.738 [http-nio-8080-exec-1] INFO  b.w.service.impl.WalletServiceImpl - balanceService completed
+15:32:50.737 [http-nio-8080-exec-5] INFO  b.wallet.controller.WalletController - /deposit API executed.
+15:32:50.740 [http-nio-8080-exec-3] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService completed
+15:32:50.741 [http-nio-8080-exec-10] INFO  b.wallet.controller.WalletController - /balance API executing...
+15:32:50.742 [http-nio-8080-exec-10] INFO  b.w.service.impl.WalletServiceImpl - balanceService started
+15:32:50.744 [http-nio-8080-exec-6] INFO  b.w.service.impl.WalletServiceImpl - depositService completed
+15:32:50.744 [http-nio-8080-exec-7] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:50.744 [http-nio-8080-exec-6] INFO  b.wallet.controller.WalletController - /deposit API executed.
+15:32:50.744 [http-nio-8080-exec-7] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:50.745 [http-nio-8080-exec-11] INFO  b.w.service.impl.WalletServiceImpl - depositService completed
+15:32:50.745 [http-nio-8080-exec-11] INFO  b.wallet.controller.WalletController - /deposit API executed.
+15:32:50.748 [http-nio-8080-exec-10] INFO  b.w.service.impl.WalletServiceImpl - fetching Wallet for userID: 1
+15:32:50.749 [http-nio-8080-exec-2] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService completed
+15:32:50.749 [http-nio-8080-exec-10] INFO  b.w.service.impl.WalletServiceImpl - balanceService completed
+15:32:50.750 [http-nio-8080-exec-9] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService completed
+15:32:50.763 [http-nio-8080-exec-5] INFO  b.wallet.controller.WalletController - /deposit API executing...
+15:32:50.763 [http-nio-8080-exec-5] INFO  b.w.service.impl.WalletServiceImpl - depositService started
+15:32:50.770 [http-nio-8080-exec-6] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:50.770 [http-nio-8080-exec-6] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:50.773 [http-nio-8080-exec-5] INFO  b.w.service.impl.WalletServiceImpl - depositService completed
+15:32:50.773 [http-nio-8080-exec-5] INFO  b.wallet.controller.WalletController - /deposit API executed.
+15:32:50.773 [http-nio-8080-exec-3] INFO  b.wallet.controller.WalletController - /deposit API executing...
+15:32:50.773 [http-nio-8080-exec-3] INFO  b.w.service.impl.WalletServiceImpl - depositService started
+15:32:50.777 [http-nio-8080-exec-8] INFO  b.wallet.controller.WalletController - /balance API executing...
+15:32:50.778 [http-nio-8080-exec-8] INFO  b.w.service.impl.WalletServiceImpl - balanceService started
+15:32:50.779 [http-nio-8080-exec-11] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:50.779 [http-nio-8080-exec-11] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:50.779 [http-nio-8080-exec-8] INFO  b.w.service.impl.WalletServiceImpl - fetching Wallet for userID: 1
+15:32:50.780 [http-nio-8080-exec-8] INFO  b.w.service.impl.WalletServiceImpl - balanceService completed
+15:32:50.783 [http-nio-8080-exec-3] INFO  b.w.service.impl.WalletServiceImpl - depositService completed
+15:32:50.784 [http-nio-8080-exec-3] INFO  b.wallet.controller.WalletController - /deposit API executed.
+15:32:50.791 [http-nio-8080-exec-1] INFO  b.wallet.controller.WalletController - /balance API executing...
+15:32:50.791 [http-nio-8080-exec-1] INFO  b.w.service.impl.WalletServiceImpl - balanceService started
+15:32:50.793 [http-nio-8080-exec-11] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService completed
+15:32:50.793 [http-nio-8080-exec-1] INFO  b.w.service.impl.WalletServiceImpl - fetching Wallet for userID: 1
+15:32:50.793 [http-nio-8080-exec-1] INFO  b.w.service.impl.WalletServiceImpl - balanceService completed
+15:32:50.796 [http-nio-8080-exec-2] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:50.796 [http-nio-8080-exec-2] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:50.801 [http-nio-8080-exec-7] INFO  b.wallet.controller.WalletController - /deposit API executing...
+15:32:50.801 [http-nio-8080-exec-7] INFO  b.w.service.impl.WalletServiceImpl - depositService started
+15:32:50.804 [http-nio-8080-exec-9] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:50.804 [http-nio-8080-exec-9] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:50.808 [http-nio-8080-exec-4] INFO  b.wallet.controller.WalletController - /deposit API executing...
+15:32:50.808 [http-nio-8080-exec-4] INFO  b.w.service.impl.WalletServiceImpl - depositService started
+15:32:50.811 [http-nio-8080-exec-10] INFO  b.wallet.controller.WalletController - /balance API executing...
+15:32:50.811 [http-nio-8080-exec-10] INFO  b.w.service.impl.WalletServiceImpl - balanceService started
+15:32:50.811 [http-nio-8080-exec-6] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:50.812 [http-nio-8080-exec-6] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:50.816 [http-nio-8080-exec-5] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:50.817 [http-nio-8080-exec-5] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:50.817 [http-nio-8080-exec-10] INFO  b.w.service.impl.WalletServiceImpl - fetching Wallet for userID: 1
+15:32:50.817 [http-nio-8080-exec-10] INFO  b.w.service.impl.WalletServiceImpl - balanceService completed
+15:32:50.820 [http-nio-8080-exec-7] INFO  b.w.service.impl.WalletServiceImpl - depositService completed
+15:32:50.820 [http-nio-8080-exec-7] INFO  b.wallet.controller.WalletController - /deposit API executed.
+15:32:50.824 [http-nio-8080-exec-6] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService completed
+15:32:50.825 [http-nio-8080-exec-4] INFO  b.w.service.impl.WalletServiceImpl - depositService completed
+15:32:50.826 [http-nio-8080-exec-4] INFO  b.wallet.controller.WalletController - /deposit API executed.
+15:32:50.828 [http-nio-8080-exec-5] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService completed
+15:32:50.832 [http-nio-8080-exec-11] INFO  b.wallet.controller.WalletController - /deposit API executing...
+15:32:50.832 [http-nio-8080-exec-8] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:50.832 [http-nio-8080-exec-11] INFO  b.w.service.impl.WalletServiceImpl - depositService started
+15:32:50.832 [http-nio-8080-exec-1] INFO  b.wallet.controller.WalletController - /deposit API executing...
+15:32:50.832 [http-nio-8080-exec-1] INFO  b.w.service.impl.WalletServiceImpl - depositService started
+15:32:50.832 [http-nio-8080-exec-8] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:50.832 [http-nio-8080-exec-2] INFO  b.wallet.controller.WalletController - /balance API executing...
+15:32:50.832 [http-nio-8080-exec-2] INFO  b.w.service.impl.WalletServiceImpl - balanceService started
+15:32:50.833 [http-nio-8080-exec-7] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:50.833 [http-nio-8080-exec-7] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:50.833 [http-nio-8080-exec-9] INFO  b.wallet.controller.WalletController - /balance API executing...
+15:32:50.833 [http-nio-8080-exec-9] INFO  b.w.service.impl.WalletServiceImpl - balanceService started
+15:32:50.833 [http-nio-8080-exec-6] INFO  b.wallet.controller.WalletController - /deposit API executing...
+15:32:50.833 [http-nio-8080-exec-6] INFO  b.w.service.impl.WalletServiceImpl - depositService started
+15:32:50.833 [http-nio-8080-exec-10] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:50.834 [http-nio-8080-exec-10] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:50.834 [http-nio-8080-exec-2] INFO  b.w.service.impl.WalletServiceImpl - fetching Wallet for userID: 1
+15:32:50.834 [http-nio-8080-exec-2] INFO  b.w.service.impl.WalletServiceImpl - balanceService completed
+15:32:50.835 [http-nio-8080-exec-9] INFO  b.w.service.impl.WalletServiceImpl - fetching Wallet for userID: 1
+15:32:50.835 [http-nio-8080-exec-9] INFO  b.w.service.impl.WalletServiceImpl - balanceService completed
+15:32:50.841 [http-nio-8080-exec-1] INFO  b.w.service.impl.WalletServiceImpl - depositService completed
+15:32:50.842 [http-nio-8080-exec-1] INFO  b.wallet.controller.WalletController - /deposit API executed.
+15:32:50.842 [http-nio-8080-exec-6] INFO  b.w.service.impl.WalletServiceImpl - depositService completed
+15:32:50.842 [http-nio-8080-exec-6] INFO  b.wallet.controller.WalletController - /deposit API executed.
+15:32:50.842 [http-nio-8080-exec-4] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:50.842 [http-nio-8080-exec-4] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:50.843 [http-nio-8080-exec-7] INFO  b.wallet.controller.WalletController - /deposit API executing...
+15:32:50.843 [http-nio-8080-exec-7] INFO  b.w.service.impl.WalletServiceImpl - depositService started
+15:32:50.845 [http-nio-8080-exec-9] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:50.845 [http-nio-8080-exec-3] INFO  b.wallet.controller.WalletController - /balance API executing...
+15:32:50.845 [http-nio-8080-exec-3] INFO  b.w.service.impl.WalletServiceImpl - balanceService started
+15:32:50.845 [http-nio-8080-exec-9] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:50.846 [http-nio-8080-exec-8] INFO  b.wallet.controller.WalletController - /balance API executing...
+15:32:50.846 [http-nio-8080-exec-8] INFO  b.w.service.impl.WalletServiceImpl - balanceService started
+15:32:50.848 [http-nio-8080-exec-2] INFO  b.wallet.controller.WalletController - /balance API executing...
+15:32:50.848 [http-nio-8080-exec-2] INFO  b.w.service.impl.WalletServiceImpl - balanceService started
+15:32:50.848 [http-nio-8080-exec-6] INFO  b.wallet.controller.WalletController - /deposit API executing...
+15:32:50.848 [http-nio-8080-exec-6] INFO  b.w.service.impl.WalletServiceImpl - depositService started
+15:32:50.849 [http-nio-8080-exec-10] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:50.849 [http-nio-8080-exec-10] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:50.850 [http-nio-8080-exec-2] INFO  b.w.service.impl.WalletServiceImpl - fetching Wallet for userID: 1
+15:32:50.850 [http-nio-8080-exec-2] INFO  b.w.service.impl.WalletServiceImpl - balanceService completed
+15:32:50.857 [http-nio-8080-exec-3] INFO  b.w.service.impl.WalletServiceImpl - fetching Wallet for userID: 1
+15:32:50.857 [http-nio-8080-exec-3] INFO  b.w.service.impl.WalletServiceImpl - balanceService completed
+15:32:50.858 [http-nio-8080-exec-1] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:50.858 [http-nio-8080-exec-2] INFO  b.wallet.controller.WalletController - /deposit API executing...
+15:32:50.857 [http-nio-8080-exec-7] INFO  b.w.service.impl.WalletServiceImpl - depositService completed
+15:32:50.858 [http-nio-8080-exec-8] INFO  b.w.service.impl.WalletServiceImpl - fetching Wallet for userID: 1
+15:32:50.858 [http-nio-8080-exec-7] INFO  b.wallet.controller.WalletController - /deposit API executed.
+15:32:50.858 [http-nio-8080-exec-8] INFO  b.w.service.impl.WalletServiceImpl - balanceService completed
+15:32:50.859 [http-nio-8080-exec-5] INFO  b.wallet.controller.WalletController - /balance API executing...
+15:32:50.859 [http-nio-8080-exec-5] INFO  b.w.service.impl.WalletServiceImpl - balanceService started
+15:32:50.860 [http-nio-8080-exec-11] INFO  b.w.service.impl.WalletServiceImpl - depositService completed
+15:32:50.860 [http-nio-8080-exec-11] INFO  b.wallet.controller.WalletController - /deposit API executed.
+15:32:50.858 [http-nio-8080-exec-1] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:50.858 [http-nio-8080-exec-2] INFO  b.w.service.impl.WalletServiceImpl - depositService started
+15:32:50.863 [http-nio-8080-exec-6] INFO  b.w.service.impl.WalletServiceImpl - depositService completed
+15:32:50.865 [http-nio-8080-exec-10] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:50.866 [http-nio-8080-exec-7] INFO  b.wallet.controller.WalletController - /balance API executing...
+15:32:50.866 [http-nio-8080-exec-5] INFO  b.w.service.impl.WalletServiceImpl - fetching Wallet for userID: 1
+15:32:50.867 [http-nio-8080-exec-5] INFO  b.w.service.impl.WalletServiceImpl - balanceService completed
+15:32:50.867 [http-nio-8080-exec-7] INFO  b.w.service.impl.WalletServiceImpl - balanceService started
+15:32:50.867 [http-nio-8080-exec-10] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:50.867 [http-nio-8080-exec-6] INFO  b.wallet.controller.WalletController - /deposit API executed.
+15:32:50.869 [http-nio-8080-exec-7] INFO  b.w.service.impl.WalletServiceImpl - fetching Wallet for userID: 1
+15:32:50.869 [http-nio-8080-exec-7] INFO  b.w.service.impl.WalletServiceImpl - balanceService completed
+15:32:50.871 [http-nio-8080-exec-4] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService completed
+15:32:50.871 [http-nio-8080-exec-11] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:50.871 [http-nio-8080-exec-11] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:50.878 [http-nio-8080-exec-2] INFO  b.w.service.impl.WalletServiceImpl - depositService completed
+15:32:50.878 [http-nio-8080-exec-2] INFO  b.wallet.controller.WalletController - /deposit API executed.
+15:32:50.892 [http-nio-8080-exec-8] INFO  b.wallet.controller.WalletController - /balance API executing...
+15:32:50.892 [http-nio-8080-exec-6] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:50.893 [http-nio-8080-exec-6] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:50.892 [http-nio-8080-exec-8] INFO  b.w.service.impl.WalletServiceImpl - balanceService started
+15:32:50.895 [http-nio-8080-exec-8] INFO  b.w.service.impl.WalletServiceImpl - fetching Wallet for userID: 1
+15:32:50.895 [http-nio-8080-exec-8] INFO  b.w.service.impl.WalletServiceImpl - balanceService completed
+15:32:50.898 [http-nio-8080-exec-3] INFO  b.wallet.controller.WalletController - /deposit API executing...
+15:32:50.898 [http-nio-8080-exec-3] INFO  b.w.service.impl.WalletServiceImpl - depositService started
+15:32:50.907 [http-nio-8080-exec-3] INFO  b.w.service.impl.WalletServiceImpl - depositService completed
+15:32:50.908 [http-nio-8080-exec-3] INFO  b.wallet.controller.WalletController - /deposit API executed.
+15:32:50.914 [http-nio-8080-exec-9] INFO  b.wallet.controller.WalletController - /balance API executing...
+15:32:50.914 [http-nio-8080-exec-9] INFO  b.w.service.impl.WalletServiceImpl - balanceService started
+15:32:50.915 [http-nio-8080-exec-10] INFO  b.wallet.controller.WalletController - /balance API executing...
+15:32:50.915 [http-nio-8080-exec-10] INFO  b.w.service.impl.WalletServiceImpl - balanceService started
+15:32:50.915 [http-nio-8080-exec-7] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:50.916 [http-nio-8080-exec-7] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:50.916 [http-nio-8080-exec-2] INFO  b.wallet.controller.WalletController - /deposit API executing...
+15:32:50.916 [http-nio-8080-exec-2] INFO  b.w.service.impl.WalletServiceImpl - depositService started
+15:32:50.918 [http-nio-8080-exec-11] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:50.918 [http-nio-8080-exec-11] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:50.919 [http-nio-8080-exec-9] INFO  b.w.service.impl.WalletServiceImpl - fetching Wallet for userID: 1
+15:32:50.920 [http-nio-8080-exec-9] INFO  b.w.service.impl.WalletServiceImpl - balanceService completed
+15:32:50.920 [http-nio-8080-exec-10] INFO  b.w.service.impl.WalletServiceImpl - fetching Wallet for userID: 1
+15:32:50.920 [http-nio-8080-exec-10] INFO  b.w.service.impl.WalletServiceImpl - balanceService completed
+15:32:50.922 [http-nio-8080-exec-6] INFO  b.wallet.controller.WalletController - /deposit API executing...
+15:32:50.922 [http-nio-8080-exec-6] INFO  b.w.service.impl.WalletServiceImpl - depositService started
+15:32:50.923 [http-nio-8080-exec-1] INFO  b.wallet.controller.WalletController - /deposit API executing...
+15:32:50.923 [http-nio-8080-exec-1] INFO  b.w.service.impl.WalletServiceImpl - depositService started
+15:32:50.928 [http-nio-8080-exec-2] INFO  b.w.service.impl.WalletServiceImpl - depositService completed
+15:32:50.928 [http-nio-8080-exec-9] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:50.928 [http-nio-8080-exec-2] INFO  b.wallet.controller.WalletController - /deposit API executed.
+15:32:50.928 [http-nio-8080-exec-11] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:50.928 [http-nio-8080-exec-9] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:50.928 [http-nio-8080-exec-11] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:50.931 [http-nio-8080-exec-2] INFO  b.wallet.controller.WalletController - /deposit API executing...
+15:32:50.931 [http-nio-8080-exec-2] INFO  b.w.service.impl.WalletServiceImpl - depositService started
+15:32:50.932 [http-nio-8080-exec-6] INFO  b.w.service.impl.WalletServiceImpl - depositService completed
+15:32:50.932 [http-nio-8080-exec-6] INFO  b.wallet.controller.WalletController - /deposit API executed.
+15:32:50.937 [http-nio-8080-exec-10] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:50.937 [http-nio-8080-exec-10] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:50.938 [http-nio-8080-exec-11] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService completed
+15:32:50.946 [http-nio-8080-exec-4] INFO  b.wallet.controller.WalletController - /deposit API executing...
+15:32:50.946 [http-nio-8080-exec-4] INFO  b.w.service.impl.WalletServiceImpl - depositService started
+15:32:50.946 [http-nio-8080-exec-5] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:50.947 [http-nio-8080-exec-5] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:50.948 [http-nio-8080-exec-1] INFO  b.w.service.impl.WalletServiceImpl - depositService completed
+15:32:50.948 [http-nio-8080-exec-2] INFO  b.w.service.impl.WalletServiceImpl - depositService completed
+15:32:50.948 [http-nio-8080-exec-1] INFO  b.wallet.controller.WalletController - /deposit API executed.
+15:32:50.948 [http-nio-8080-exec-2] INFO  b.wallet.controller.WalletController - /deposit API executed.
+15:32:50.952 [http-nio-8080-exec-54] INFO  b.wallet.controller.WalletController - /balance API executing...
+15:32:50.953 [http-nio-8080-exec-54] INFO  b.w.service.impl.WalletServiceImpl - balanceService started
+15:32:50.953 [http-nio-8080-exec-57] INFO  b.wallet.controller.WalletController - /deposit API executing...
+15:32:50.953 [http-nio-8080-exec-57] INFO  b.w.service.impl.WalletServiceImpl - depositService started
+15:32:50.953 [http-nio-8080-exec-62] INFO  b.wallet.controller.WalletController - /balance API executing...
+15:32:50.953 [http-nio-8080-exec-62] INFO  b.w.service.impl.WalletServiceImpl - balanceService started
+15:32:50.955 [http-nio-8080-exec-54] INFO  b.w.service.impl.WalletServiceImpl - fetching Wallet for userID: 1
+15:32:50.955 [http-nio-8080-exec-54] INFO  b.w.service.impl.WalletServiceImpl - balanceService completed
+15:32:50.955 [http-nio-8080-exec-62] INFO  b.w.service.impl.WalletServiceImpl - fetching Wallet for userID: 1
+15:32:50.955 [http-nio-8080-exec-62] INFO  b.w.service.impl.WalletServiceImpl - balanceService completed
+15:32:50.957 [http-nio-8080-exec-84] INFO  b.wallet.controller.WalletController - /deposit API executing...
+15:32:50.957 [http-nio-8080-exec-84] INFO  b.w.service.impl.WalletServiceImpl - depositService started
+15:32:50.958 [http-nio-8080-exec-4] INFO  b.w.service.impl.WalletServiceImpl - depositService completed
+15:32:50.959 [http-nio-8080-exec-4] INFO  b.wallet.controller.WalletController - /deposit API executed.
+15:32:50.964 [http-nio-8080-exec-57] INFO  b.w.service.impl.WalletServiceImpl - depositService completed
+15:32:50.964 [http-nio-8080-exec-57] INFO  b.wallet.controller.WalletController - /deposit API executed.
+15:32:50.964 [http-nio-8080-exec-30] INFO  b.wallet.controller.WalletController - /deposit API executing...
+15:32:50.964 [http-nio-8080-exec-30] INFO  b.w.service.impl.WalletServiceImpl - depositService started
+15:32:50.965 [http-nio-8080-exec-10] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService completed
+15:32:50.965 [http-nio-8080-exec-7] INFO  b.wallet.controller.WalletController - /balance API executing...
+15:32:50.965 [http-nio-8080-exec-7] INFO  b.w.service.impl.WalletServiceImpl - balanceService started
+15:32:50.967 [http-nio-8080-exec-57] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:50.967 [http-nio-8080-exec-57] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:50.968 [http-nio-8080-exec-82] INFO  b.wallet.controller.WalletController - /balance API executing...
+15:32:50.968 [http-nio-8080-exec-83] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:50.968 [http-nio-8080-exec-82] INFO  b.w.service.impl.WalletServiceImpl - balanceService started
+15:32:50.968 [http-nio-8080-exec-83] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:50.968 [http-nio-8080-exec-84] INFO  b.w.service.impl.WalletServiceImpl - depositService completed
+15:32:50.968 [http-nio-8080-exec-84] INFO  b.wallet.controller.WalletController - /deposit API executed.
+15:32:50.969 [http-nio-8080-exec-82] INFO  b.w.service.impl.WalletServiceImpl - fetching Wallet for userID: 1
+15:32:50.970 [http-nio-8080-exec-82] INFO  b.w.service.impl.WalletServiceImpl - balanceService completed
+15:32:50.970 [http-nio-8080-exec-4] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:50.970 [http-nio-8080-exec-84] INFO  b.wallet.controller.WalletController - /balance API executing...
+15:32:50.970 [http-nio-8080-exec-84] INFO  b.w.service.impl.WalletServiceImpl - balanceService started
+15:32:50.970 [http-nio-8080-exec-4] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:50.972 [http-nio-8080-exec-84] INFO  b.w.service.impl.WalletServiceImpl - fetching Wallet for userID: 1
+15:32:50.972 [http-nio-8080-exec-84] INFO  b.w.service.impl.WalletServiceImpl - balanceService completed
+15:32:50.974 [http-nio-8080-exec-30] INFO  b.w.service.impl.WalletServiceImpl - depositService completed
+15:32:50.974 [http-nio-8080-exec-30] INFO  b.wallet.controller.WalletController - /deposit API executed.
+15:32:50.976 [http-nio-8080-exec-5] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService completed
+15:32:50.977 [http-nio-8080-exec-83] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService completed
+15:32:50.977 [http-nio-8080-exec-57] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService completed
+15:32:50.980 [http-nio-8080-exec-83] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:50.980 [http-nio-8080-exec-5] INFO  b.wallet.controller.WalletController - /deposit API executing...
+15:32:50.980 [http-nio-8080-exec-83] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:50.980 [http-nio-8080-exec-5] INFO  b.w.service.impl.WalletServiceImpl - depositService started
+15:32:50.980 [http-nio-8080-exec-57] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:50.980 [http-nio-8080-exec-57] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:50.983 [http-nio-8080-exec-31] INFO  b.wallet.controller.WalletController - /balance API executing...
+15:32:50.983 [http-nio-8080-exec-31] INFO  b.w.service.impl.WalletServiceImpl - balanceService started
+15:32:50.983 [http-nio-8080-exec-28] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:50.983 [http-nio-8080-exec-28] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:50.983 [http-nio-8080-exec-4] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService completed
+15:32:50.985 [http-nio-8080-exec-82] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:50.985 [http-nio-8080-exec-31] INFO  b.w.service.impl.WalletServiceImpl - fetching Wallet for userID: 1
+15:32:50.985 [http-nio-8080-exec-82] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:50.985 [http-nio-8080-exec-31] INFO  b.w.service.impl.WalletServiceImpl - balanceService completed
+15:32:50.990 [http-nio-8080-exec-83] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService completed
+15:32:50.992 [http-nio-8080-exec-57] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService completed
+15:32:50.992 [http-nio-8080-exec-28] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService completed
+15:32:50.995 [http-nio-8080-exec-7] INFO  b.w.service.impl.WalletServiceImpl - fetching Wallet for userID: 1
+15:32:50.995 [http-nio-8080-exec-7] INFO  b.w.service.impl.WalletServiceImpl - balanceService completed
+15:32:50.996 [http-nio-8080-exec-82] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService completed
+15:32:50.997 [http-nio-8080-exec-9] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:50.997 [http-nio-8080-exec-9] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:51.006 [http-nio-8080-exec-5] INFO  b.w.service.impl.WalletServiceImpl - depositService completed
+15:32:51.006 [http-nio-8080-exec-5] INFO  b.wallet.controller.WalletController - /deposit API executed.
+15:32:51.011 [http-nio-8080-exec-9] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService completed
+15:32:51.033 [http-nio-8080-exec-46] INFO  b.wallet.controller.WalletController - /balance API executing...
+15:32:51.033 [http-nio-8080-exec-44] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:51.033 [http-nio-8080-exec-42] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:51.033 [http-nio-8080-exec-41] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:51.033 [http-nio-8080-exec-42] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:51.033 [http-nio-8080-exec-46] INFO  b.w.service.impl.WalletServiceImpl - balanceService started
+15:32:51.033 [http-nio-8080-exec-38] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:51.033 [http-nio-8080-exec-45] INFO  b.wallet.controller.WalletController - /deposit API executing...
+15:32:51.033 [http-nio-8080-exec-44] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:51.034 [http-nio-8080-exec-38] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:51.033 [http-nio-8080-exec-39] INFO  b.wallet.controller.WalletController - /deposit API executing...
+15:32:51.033 [http-nio-8080-exec-41] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:51.034 [http-nio-8080-exec-45] INFO  b.w.service.impl.WalletServiceImpl - depositService started
+15:32:51.034 [http-nio-8080-exec-39] INFO  b.w.service.impl.WalletServiceImpl - depositService started
+15:32:51.035 [http-nio-8080-exec-46] INFO  b.w.service.impl.WalletServiceImpl - fetching Wallet for userID: 1
+15:32:51.035 [http-nio-8080-exec-46] INFO  b.w.service.impl.WalletServiceImpl - balanceService completed
+15:32:51.042 [http-nio-8080-exec-8] INFO  b.wallet.controller.WalletController - /balance API executing...
+15:32:51.043 [http-nio-8080-exec-8] INFO  b.w.service.impl.WalletServiceImpl - balanceService started
+15:32:51.043 [http-nio-8080-exec-45] INFO  b.w.service.impl.WalletServiceImpl - depositService completed
+15:32:51.043 [http-nio-8080-exec-45] INFO  b.wallet.controller.WalletController - /deposit API executed.
+15:32:51.043 [http-nio-8080-exec-3] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:51.043 [http-nio-8080-exec-3] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:51.043 [http-nio-8080-exec-39] INFO  b.w.service.impl.WalletServiceImpl - depositService completed
+15:32:51.043 [http-nio-8080-exec-39] INFO  b.wallet.controller.WalletController - /deposit API executed.
+15:32:51.044 [http-nio-8080-exec-38] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService completed
+15:32:51.044 [http-nio-8080-exec-42] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService completed
+15:32:51.044 [http-nio-8080-exec-8] INFO  b.w.service.impl.WalletServiceImpl - fetching Wallet for userID: 1
+15:32:51.044 [http-nio-8080-exec-8] INFO  b.w.service.impl.WalletServiceImpl - balanceService completed
+15:32:51.051 [http-nio-8080-exec-27] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:51.051 [http-nio-8080-exec-47] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:51.051 [http-nio-8080-exec-43] INFO  b.wallet.controller.WalletController - /deposit API executing...
+15:32:51.051 [http-nio-8080-exec-27] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:51.051 [http-nio-8080-exec-47] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:51.051 [http-nio-8080-exec-43] INFO  b.w.service.impl.WalletServiceImpl - depositService started
+15:32:51.052 [http-nio-8080-exec-3] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService completed
+15:32:51.053 [http-nio-8080-exec-41] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService completed
+15:32:51.057 [http-nio-8080-exec-49] INFO  b.wallet.controller.WalletController - /deposit API executing...
+15:32:51.057 [http-nio-8080-exec-49] INFO  b.w.service.impl.WalletServiceImpl - depositService started
+15:32:51.060 [http-nio-8080-exec-43] INFO  b.w.service.impl.WalletServiceImpl - depositService completed
+15:32:51.060 [http-nio-8080-exec-43] INFO  b.wallet.controller.WalletController - /deposit API executed.
+15:32:51.060 [http-nio-8080-exec-27] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService completed
+15:32:51.066 [http-nio-8080-exec-49] INFO  b.w.service.impl.WalletServiceImpl - depositService completed
+15:32:51.066 [http-nio-8080-exec-49] INFO  b.wallet.controller.WalletController - /deposit API executed.
+15:32:51.069 [http-nio-8080-exec-50] INFO  b.wallet.controller.WalletController - /balance API executing...
+15:32:51.069 [http-nio-8080-exec-50] INFO  b.w.service.impl.WalletServiceImpl - balanceService started
+15:32:51.069 [http-nio-8080-exec-53] INFO  b.wallet.controller.WalletController - /balance API executing...
+15:32:51.069 [http-nio-8080-exec-16] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:51.069 [http-nio-8080-exec-51] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:51.069 [http-nio-8080-exec-52] INFO  b.wallet.controller.WalletController - /deposit API executing...
+15:32:51.069 [http-nio-8080-exec-53] INFO  b.w.service.impl.WalletServiceImpl - balanceService started
+15:32:51.069 [http-nio-8080-exec-52] INFO  b.w.service.impl.WalletServiceImpl - depositService started
+15:32:51.069 [http-nio-8080-exec-16] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:51.069 [http-nio-8080-exec-51] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:51.069 [http-nio-8080-exec-56] INFO  b.wallet.controller.WalletController - /balance API executing...
+15:32:51.070 [http-nio-8080-exec-55] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:51.070 [http-nio-8080-exec-56] INFO  b.w.service.impl.WalletServiceImpl - balanceService started
+15:32:51.070 [http-nio-8080-exec-55] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:51.071 [http-nio-8080-exec-20] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:51.071 [http-nio-8080-exec-60] INFO  b.wallet.controller.WalletController - /deposit API executing...
+15:32:51.071 [http-nio-8080-exec-58] INFO  b.wallet.controller.WalletController - /deposit API executing...
+15:32:51.071 [http-nio-8080-exec-60] INFO  b.w.service.impl.WalletServiceImpl - depositService started
+15:32:51.071 [http-nio-8080-exec-20] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:51.071 [http-nio-8080-exec-58] INFO  b.w.service.impl.WalletServiceImpl - depositService started
+15:32:51.071 [http-nio-8080-exec-53] INFO  b.w.service.impl.WalletServiceImpl - fetching Wallet for userID: 1
+15:32:51.072 [http-nio-8080-exec-53] INFO  b.w.service.impl.WalletServiceImpl - balanceService completed
+15:32:51.072 [http-nio-8080-exec-50] INFO  b.w.service.impl.WalletServiceImpl - fetching Wallet for userID: 1
+15:32:51.072 [http-nio-8080-exec-50] INFO  b.w.service.impl.WalletServiceImpl - balanceService completed
+15:32:51.072 [http-nio-8080-exec-56] INFO  b.w.service.impl.WalletServiceImpl - fetching Wallet for userID: 1
+15:32:51.072 [http-nio-8080-exec-56] INFO  b.w.service.impl.WalletServiceImpl - balanceService completed
+15:32:51.079 [http-nio-8080-exec-58] INFO  b.w.service.impl.WalletServiceImpl - depositService completed
+15:32:51.080 [http-nio-8080-exec-58] INFO  b.wallet.controller.WalletController - /deposit API executed.
+15:32:51.080 [http-nio-8080-exec-52] INFO  b.w.service.impl.WalletServiceImpl - depositService completed
+15:32:51.080 [http-nio-8080-exec-52] INFO  b.wallet.controller.WalletController - /deposit API executed.
+15:32:51.080 [http-nio-8080-exec-16] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService completed
+15:32:51.081 [http-nio-8080-exec-55] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService completed
+15:32:51.082 [http-nio-8080-exec-20] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService completed
+15:32:51.082 [http-nio-8080-exec-60] INFO  b.w.service.impl.WalletServiceImpl - depositService completed
+15:32:51.082 [http-nio-8080-exec-60] INFO  b.wallet.controller.WalletController - /deposit API executed.
+15:32:51.084 [http-nio-8080-exec-51] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService completed
+15:32:51.088 [http-nio-8080-exec-63] INFO  b.wallet.controller.WalletController - /deposit API executing...
+15:32:51.088 [http-nio-8080-exec-63] INFO  b.w.service.impl.WalletServiceImpl - depositService started
+15:32:51.088 [http-nio-8080-exec-64] INFO  b.wallet.controller.WalletController - /balance API executing...
+15:32:51.088 [http-nio-8080-exec-66] INFO  b.wallet.controller.WalletController - /balance API executing...
+15:32:51.088 [http-nio-8080-exec-64] INFO  b.w.service.impl.WalletServiceImpl - balanceService started
+15:32:51.088 [http-nio-8080-exec-66] INFO  b.w.service.impl.WalletServiceImpl - balanceService started
+15:32:51.088 [http-nio-8080-exec-18] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:51.088 [http-nio-8080-exec-18] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:51.090 [http-nio-8080-exec-64] INFO  b.w.service.impl.WalletServiceImpl - fetching Wallet for userID: 1
+15:32:51.090 [http-nio-8080-exec-66] INFO  b.w.service.impl.WalletServiceImpl - fetching Wallet for userID: 1
+15:32:51.090 [http-nio-8080-exec-64] INFO  b.w.service.impl.WalletServiceImpl - balanceService completed
+15:32:51.090 [http-nio-8080-exec-66] INFO  b.w.service.impl.WalletServiceImpl - balanceService completed
+15:32:51.097 [http-nio-8080-exec-63] INFO  b.w.service.impl.WalletServiceImpl - depositService completed
+15:32:51.098 [http-nio-8080-exec-63] INFO  b.wallet.controller.WalletController - /deposit API executed.
+15:32:51.098 [http-nio-8080-exec-18] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService completed
+15:32:51.099 [http-nio-8080-exec-68] INFO  b.wallet.controller.WalletController - /deposit API executing...
+15:32:51.099 [http-nio-8080-exec-68] INFO  b.w.service.impl.WalletServiceImpl - depositService started
+15:32:51.099 [http-nio-8080-exec-69] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:51.099 [http-nio-8080-exec-69] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:51.099 [http-nio-8080-exec-70] INFO  b.wallet.controller.WalletController - /balance API executing...
+15:32:51.099 [http-nio-8080-exec-70] INFO  b.w.service.impl.WalletServiceImpl - balanceService started
+15:32:51.099 [http-nio-8080-exec-15] INFO  b.wallet.controller.WalletController - /balance API executing...
+15:32:51.099 [http-nio-8080-exec-71] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:51.099 [http-nio-8080-exec-15] INFO  b.w.service.impl.WalletServiceImpl - balanceService started
+15:32:51.099 [http-nio-8080-exec-71] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:51.100 [http-nio-8080-exec-72] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:32:51.100 [http-nio-8080-exec-72] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:32:51.101 [http-nio-8080-exec-70] INFO  b.w.service.impl.WalletServiceImpl - fetching Wallet for userID: 1
+15:32:51.101 [http-nio-8080-exec-70] INFO  b.w.service.impl.WalletServiceImpl - balanceService completed
+15:32:51.101 [http-nio-8080-exec-15] INFO  b.w.service.impl.WalletServiceImpl - fetching Wallet for userID: 1
+15:32:51.101 [http-nio-8080-exec-15] INFO  b.w.service.impl.WalletServiceImpl - balanceService completed
+15:32:51.104 [http-nio-8080-exec-67] INFO  b.wallet.controller.WalletController - /deposit API executing...
+15:32:51.104 [http-nio-8080-exec-67] INFO  b.w.service.impl.WalletServiceImpl - depositService started
+15:32:51.108 [http-nio-8080-exec-68] INFO  b.w.service.impl.WalletServiceImpl - depositService completed
+15:32:51.108 [http-nio-8080-exec-68] INFO  b.wallet.controller.WalletController - /deposit API executed.
+15:32:51.114 [http-nio-8080-exec-67] INFO  b.w.service.impl.WalletServiceImpl - depositService completed
+15:32:51.114 [http-nio-8080-exec-67] INFO  b.wallet.controller.WalletController - /deposit API executed.
+15:33:19.899 [http-nio-8080-exec-38] INFO  b.wallet.controller.WalletController - /balance API executing...
+15:33:19.899 [http-nio-8080-exec-38] INFO  b.w.service.impl.WalletServiceImpl - balanceService started
+15:33:19.902 [http-nio-8080-exec-38] INFO  b.w.service.impl.WalletServiceImpl - fetching Wallet for userID: 1
+15:33:19.902 [http-nio-8080-exec-38] INFO  b.w.service.impl.WalletServiceImpl - balanceService completed
+15:33:30.666 [http-nio-8080-exec-8] INFO  b.wallet.controller.WalletController - /balance API executing...
+15:33:30.666 [http-nio-8080-exec-8] INFO  b.w.service.impl.WalletServiceImpl - balanceService started
+15:33:30.669 [http-nio-8080-exec-8] INFO  b.w.service.impl.WalletServiceImpl - fetching Wallet for userID: 2
+15:33:30.670 [http-nio-8080-exec-8] INFO  b.w.service.impl.WalletServiceImpl - balanceService completed
+15:33:30.675 [http-nio-8080-exec-8] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is javax.persistence.EntityNotFoundException: Unable to find betPawa.wallet.user.User with id 2] with root cause
+javax.persistence.EntityNotFoundException: Unable to find betPawa.wallet.user.User with id 2
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$JpaEntityNotFoundDelegate.handleEntityNotFound(EntityManagerFactoryBuilderImpl.java:159)
+	at org.hibernate.proxy.AbstractLazyInitializer.checkTargetState(AbstractLazyInitializer.java:244)
+	at org.hibernate.proxy.AbstractLazyInitializer.initialize(AbstractLazyInitializer.java:166)
+	at org.hibernate.proxy.AbstractLazyInitializer.getImplementation(AbstractLazyInitializer.java:268)
+	at org.hibernate.proxy.pojo.javassist.JavassistLazyInitializer.invoke(JavassistLazyInitializer.java:73)
+	at betPawa.wallet.user.User_$$_jvst288_1.getUserWallet(User_$$_jvst288_1.java)
+	at betPawa.wallet.service.impl.WalletServiceImpl.balanceService(WalletServiceImpl.java:82)
+	at betPawa.wallet.controller.WalletController.getFundsByUserId(WalletController.java:78)
+	at sun.reflect.GeneratedMethodAccessor98.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+15:33:33.226 [http-nio-8080-exec-3] INFO  b.wallet.controller.WalletController - /balance API executing...
+15:33:33.226 [http-nio-8080-exec-3] INFO  b.w.service.impl.WalletServiceImpl - balanceService started
+15:33:33.228 [http-nio-8080-exec-3] INFO  b.w.service.impl.WalletServiceImpl - fetching Wallet for userID: 1
+15:33:33.229 [http-nio-8080-exec-3] INFO  b.w.service.impl.WalletServiceImpl - balanceService completed
+15:34:26.446 [http-nio-8080-exec-42] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:34:26.446 [http-nio-8080-exec-42] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:34:26.458 [http-nio-8080-exec-42] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService completed
+15:34:34.000 [http-nio-8080-exec-78] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:34:34.000 [http-nio-8080-exec-78] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:34:34.011 [http-nio-8080-exec-78] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService completed
+15:34:42.672 [http-nio-8080-exec-6] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:34:42.672 [http-nio-8080-exec-6] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:34:42.682 [http-nio-8080-exec-6] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService completed
+15:34:47.365 [http-nio-8080-exec-46] INFO  b.wallet.controller.WalletController - /balance API executing...
+15:34:47.366 [http-nio-8080-exec-46] INFO  b.w.service.impl.WalletServiceImpl - balanceService started
+15:34:47.368 [http-nio-8080-exec-46] INFO  b.w.service.impl.WalletServiceImpl - fetching Wallet for userID: 1
+15:34:47.368 [http-nio-8080-exec-46] INFO  b.w.service.impl.WalletServiceImpl - balanceService completed
+15:34:59.272 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [betPawa.wallet.WalletControllerIntegrationTests], using SpringBootContextLoader
+15:34:59.281 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [betPawa.wallet.WalletControllerIntegrationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+15:34:59.498 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+15:34:59.519 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1e178745, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@192c3f1e, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@26b3fd41, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7494f96a, org.springframework.test.context.support.DirtiesContextTestExecutionListener@561b6512, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2e377400, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1757cd72, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@445b295b, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@49e5f737, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5c671d7f, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@757277dc, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@687e99d8]
+15:35:00.051 [main] WARN  o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/Users/akshaysaxena/.gradle/caches/modules-2/files-2.1/org.json/json/20171018/36ced462c97f0845b4a7b266a25cebe95d18baa3/json-20171018.jar!/org/json/JSONObject.class
+	jar:file:/Users/akshaysaxena/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+15:35:00.062 [main] INFO  b.w.WalletControllerIntegrationTests - Starting WalletControllerIntegrationTests on 172-11-17-92.lightspeed.irvnca.sbcglobal.net with PID 26690 (started by akshaysaxena in /Users/akshaysaxena/Dev/learning/pWallet)
+15:35:00.063 [main] INFO  b.w.WalletControllerIntegrationTests - No active profile set, falling back to default profiles: default
+15:35:00.084 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@291a7e3c: startup date [Tue Mar 26 15:35:00 IST 2019]; root of context hierarchy
+15:35:01.321 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e152606d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+15:35:01.646 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 0 (http)
+15:35:01.662 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-auto-1"]
+15:35:01.674 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+15:35:01.674 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+15:35:01.685 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/akshaysaxena/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+15:35:01.856 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+15:35:01.857 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1773 ms
+15:35:01.977 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+15:35:01.981 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+15:35:01.981 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+15:35:01.981 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+15:35:01.981 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+15:35:02.142 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+15:35:02.146 [main] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+15:35:02.292 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+15:35:02.333 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+15:35:02.352 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+15:35:02.431 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.17.Final}
+15:35:02.432 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+15:35:02.476 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+15:35:02.613 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+15:35:03.235 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+15:35:03.772 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+15:35:04.118 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@291a7e3c: startup date [Tue Mar 26 15:35:00 IST 2019]; root of context hierarchy
+15:35:04.173 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+15:35:04.226 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/users],methods=[GET]}" onto public java.util.List<betPawa.wallet.user.User> betPawa.wallet.controller.UserController.getAllUsers()
+15:35:04.228 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/users],methods=[POST]}" onto public betPawa.wallet.user.User betPawa.wallet.controller.UserController.createUser(betPawa.wallet.user.User)
+15:35:04.229 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/get/{id}],methods=[GET]}" onto public betPawa.wallet.user.User betPawa.wallet.controller.UserController.getUserById(java.lang.Long)
+15:35:04.233 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/betpawa/wallet/deposit],methods=[POST]}" onto public void betPawa.wallet.controller.WalletController.depositUserWallet(betPawa.wallet.user.DepositRequest)
+15:35:04.234 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/betpawa/wallet/deposit],methods=[GET]}" onto public void betPawa.wallet.controller.WalletController.depositUserWallet(java.lang.Long,java.lang.Double,java.lang.String)
+15:35:04.234 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/betpawa/wallet/withdraw],methods=[GET]}" onto public betPawa.wallet.response.SuccessResponse betPawa.wallet.controller.WalletController.withdrawUserWallet(java.lang.Long,java.lang.Double,java.lang.String)
+15:35:04.234 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/betpawa/wallet/withdraw],methods=[POST]}" onto public betPawa.wallet.response.SuccessResponse betPawa.wallet.controller.WalletController.withdrawUserWallet(betPawa.wallet.user.DepositRequest)
+15:35:04.234 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/betpawa/wallet/balance],methods=[GET]}" onto public java.util.List<betPawa.wallet.model.Funds> betPawa.wallet.controller.WalletController.getFundsByUserId(java.lang.Long)
+15:35:04.237 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+15:35:04.237 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+15:35:04.275 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+15:35:04.275 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+15:35:04.293 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in customizedResponseEntityExceptionHandler
+15:35:04.729 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-auto-1"]
+15:35:04.765 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+15:35:04.787 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 65013 (http) with context path ''
+15:35:04.791 [main] INFO  b.w.WalletControllerIntegrationTests - Started WalletControllerIntegrationTests in 4.976 seconds (JVM running for 6.382)
+15:35:05.421 [http-nio-auto-1-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+15:35:05.422 [http-nio-auto-1-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+15:35:05.509 [http-nio-auto-1-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 86 ms
+15:35:05.751 [http-nio-auto-1-exec-1] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:35:05.751 [http-nio-auto-1-exec-1] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:35:05.902 [http-nio-auto-1-exec-1] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+15:35:06.050 [http-nio-auto-1-exec-2] INFO  b.wallet.controller.WalletController - /deposit API executing...
+15:35:06.050 [http-nio-auto-1-exec-2] INFO  b.w.service.impl.WalletServiceImpl - depositService started
+15:35:06.118 [http-nio-auto-1-exec-2] INFO  b.w.service.impl.WalletServiceImpl - depositService completed
+15:35:06.119 [http-nio-auto-1-exec-2] INFO  b.wallet.controller.WalletController - /deposit API executed.
+15:35:06.138 [http-nio-auto-1-exec-3] INFO  b.wallet.controller.WalletController - /balance API executing...
+15:35:06.138 [http-nio-auto-1-exec-3] INFO  b.w.service.impl.WalletServiceImpl - balanceService started
+15:35:06.140 [http-nio-auto-1-exec-3] INFO  b.w.service.impl.WalletServiceImpl - fetching Wallet for userID: 1
+15:35:06.140 [http-nio-auto-1-exec-3] INFO  b.w.service.impl.WalletServiceImpl - balanceService completed
+15:35:06.174 [http-nio-auto-1-exec-4] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:35:06.174 [http-nio-auto-1-exec-4] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:35:06.199 [http-nio-auto-1-exec-5] INFO  b.wallet.controller.WalletController - /deposit API executing...
+15:35:06.200 [http-nio-auto-1-exec-5] INFO  b.w.service.impl.WalletServiceImpl - depositService started
+15:35:06.209 [http-nio-auto-1-exec-5] INFO  b.w.service.impl.WalletServiceImpl - depositService completed
+15:35:06.209 [http-nio-auto-1-exec-5] INFO  b.wallet.controller.WalletController - /deposit API executed.
+15:35:06.218 [http-nio-auto-1-exec-6] INFO  b.wallet.controller.WalletController - /balance API executing...
+15:35:06.218 [http-nio-auto-1-exec-6] INFO  b.w.service.impl.WalletServiceImpl - balanceService started
+15:35:06.220 [http-nio-auto-1-exec-6] INFO  b.w.service.impl.WalletServiceImpl - fetching Wallet for userID: 1
+15:35:06.220 [http-nio-auto-1-exec-6] INFO  b.w.service.impl.WalletServiceImpl - balanceService completed
+15:35:06.242 [http-nio-auto-1-exec-7] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:35:06.242 [http-nio-auto-1-exec-7] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:35:06.267 [http-nio-auto-1-exec-8] INFO  b.wallet.controller.WalletController - /deposit API executing...
+15:35:06.267 [http-nio-auto-1-exec-8] INFO  b.w.service.impl.WalletServiceImpl - depositService started
+15:35:06.276 [http-nio-auto-1-exec-8] INFO  b.w.service.impl.WalletServiceImpl - depositService completed
+15:35:06.276 [http-nio-auto-1-exec-8] INFO  b.wallet.controller.WalletController - /deposit API executed.
+15:35:06.285 [http-nio-auto-1-exec-9] INFO  b.wallet.controller.WalletController - /balance API executing...
+15:35:06.285 [http-nio-auto-1-exec-9] INFO  b.w.service.impl.WalletServiceImpl - balanceService started
+15:35:06.287 [http-nio-auto-1-exec-9] INFO  b.w.service.impl.WalletServiceImpl - fetching Wallet for userID: 1
+15:35:06.287 [http-nio-auto-1-exec-9] INFO  b.w.service.impl.WalletServiceImpl - balanceService completed
+15:35:06.307 [http-nio-auto-1-exec-10] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:35:06.308 [http-nio-auto-1-exec-10] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:35:06.321 [http-nio-auto-1-exec-10] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService completed
+15:35:06.335 [http-nio-auto-1-exec-1] INFO  b.wallet.controller.WalletController - /balance API executing...
+15:35:06.335 [http-nio-auto-1-exec-1] INFO  b.w.service.impl.WalletServiceImpl - balanceService started
+15:35:06.338 [http-nio-auto-1-exec-1] INFO  b.w.service.impl.WalletServiceImpl - fetching Wallet for userID: 1
+15:35:06.338 [http-nio-auto-1-exec-1] INFO  b.w.service.impl.WalletServiceImpl - balanceService completed
+15:35:06.356 [http-nio-auto-1-exec-2] INFO  b.wallet.controller.WalletController - /withdraw API executing...
+15:35:06.356 [http-nio-auto-1-exec-2] INFO  b.w.service.impl.WalletServiceImpl - withdrawlService started
+15:35:06.367 [Thread-3] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@291a7e3c: startup date [Tue Mar 26 15:35:00 IST 2019]; root of context hierarchy
+15:35:06.371 [Thread-3] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+15:35:06.372 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+15:35:06.376 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+16:09:38.863 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m40s231ms).
+16:35:30.261 [Thread-3] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4ddced80: startup date [Tue Mar 26 15:30:56 IST 2019]; root of context hierarchy
+16:35:30.263 [Thread-3] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+16:35:30.264 [Thread-3] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+16:35:30.267 [Thread-3] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+16:35:30.268 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+16:35:30.275 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+16:35:50.386 [main] INFO  betPawa.wallet.Application - Starting Application on 172-11-17-92.lightspeed.irvnca.sbcglobal.net with PID 27884 (/Users/akshaysaxena/Dev/learning/pWallet/build/classes/java/main started by akshaysaxena in /Users/akshaysaxena/Dev/learning/pWallet)
+16:35:50.390 [main] INFO  betPawa.wallet.Application - No active profile set, falling back to default profiles: default
+16:35:50.433 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@59d016c9: startup date [Tue Mar 26 16:35:50 IST 2019]; root of context hierarchy
+16:35:51.300 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a0bbf455] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+16:35:51.548 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+16:35:51.565 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+16:35:51.574 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:35:51.575 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+16:35:51.584 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/akshaysaxena/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+16:35:51.682 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:35:51.682 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1249 ms
+16:35:51.785 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+16:35:51.789 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+16:35:51.790 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+16:35:51.790 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+16:35:51.790 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+16:35:52.000 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+16:35:52.006 [main] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+16:35:52.163 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+16:35:52.199 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+16:35:52.214 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+16:35:52.288 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.17.Final}
+16:35:52.289 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+16:35:52.324 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+16:35:52.446 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+16:35:53.037 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+16:35:53.424 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+16:35:53.630 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@59d016c9: startup date [Tue Mar 26 16:35:50 IST 2019]; root of context hierarchy
+16:35:53.675 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16:35:53.706 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/users],methods=[GET]}" onto public java.util.List<betPawa.wallet.user.User> betPawa.wallet.controller.UserController.getAllUsers()
+16:35:53.707 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/users],methods=[POST]}" onto public betPawa.wallet.user.User betPawa.wallet.controller.UserController.createUser(betPawa.wallet.user.User)
+16:35:53.708 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/get/{id}],methods=[GET]}" onto public betPawa.wallet.user.User betPawa.wallet.controller.UserController.getUserById(java.lang.Long)
+16:35:53.710 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/betpawa/wallet/deposit],methods=[POST]}" onto public void betPawa.wallet.controller.WalletController.depositUserWallet(betPawa.wallet.user.DepositRequest)
+16:35:53.710 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/betpawa/wallet/deposit],methods=[GET]}" onto public void betPawa.wallet.controller.WalletController.depositUserWallet(java.lang.Long,java.lang.Double,java.lang.String)
+16:35:53.711 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/betpawa/wallet/withdraw],methods=[GET]}" onto public betPawa.wallet.response.SuccessResponse betPawa.wallet.controller.WalletController.withdrawUserWallet(java.lang.Long,java.lang.Double,java.lang.String)
+16:35:53.711 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/betpawa/wallet/withdraw],methods=[POST]}" onto public betPawa.wallet.response.SuccessResponse betPawa.wallet.controller.WalletController.withdrawUserWallet(betPawa.wallet.user.DepositRequest)
+16:35:53.711 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/betpawa/wallet/balance],methods=[GET]}" onto public java.util.List<betPawa.wallet.model.Funds> betPawa.wallet.controller.WalletController.getFundsByUserId(java.lang.Long)
+16:35:53.715 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+16:35:53.716 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+16:35:53.743 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+16:35:53.744 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+16:35:53.757 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in customizedResponseEntityExceptionHandler
+16:35:54.019 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+16:35:54.020 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+16:35:54.024 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+16:35:54.035 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+16:35:54.054 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+16:35:54.066 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+16:35:54.069 [main] INFO  betPawa.wallet.Application - Started Application in 4.369 seconds (JVM running for 4.897)
