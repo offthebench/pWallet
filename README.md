@@ -67,3 +67,5 @@ User Table stores user info and bidirectional relation to wallet table(User tabl
 Wallet Table stores users wallets info and bidirectional relation to Funds table(Wallet table contains Funds PK & Funds Tables contains Wallets PK) making sure that each Wallet has more than one Fund type but, Every Fund has only one wallet.
 
 Funds and Users are not related as there is no point/scenario to fetch users funds directly without a wallet. It should not be done.
+
+![alt text](https://raw.githubusercontent.com/offthebench/pWallet)
