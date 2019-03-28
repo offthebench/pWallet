@@ -68,4 +68,4 @@ Wallet Table stores users wallets info and bidirectional relation to Funds table
 
 Funds and Users are not related as there is no point/scenario to fetch users funds directly without a wallet. It should not be done.
 
-![alt text](https://raw.githubusercontent.com/offthebench/pWallet/blob/master/erd.png)
+![alt text](https://github.com/offthebench/pWallet/blob/master/erd.png)
