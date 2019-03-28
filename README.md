@@ -52,3 +52,18 @@ Follow the on-screen instructions.
 /betpawa/wallet/balance?userId=1
 
 ##### *Server starts up at port 8080
+
+
+# Important Choices in the solution
+
+1. Whether to make two different applications for Server and Client - As I went throught the requirement I realised that the power of Gradle build can be used to keep the two together and run one as a SpringBoot Web App and other as a CLI app, independent of each other.
+
+2. To Create GET/POST both type of requests for Wallet basic interfaces. Depending upon which client would be consuming it and making it easier for clients.
+
+3. The DB Structure. Which majorly contains User, Wallets and Funds tables.
+
+User Table stores user info and bidirectional relation to wallet table(User table contains Wallets PK & Wallet Tables contains users PK) making sure that each user has one wallet and vice versa.
+
+Wallet Table stores users wallets info and bidirectional relation to Funds table(Wallet table contains Funds PK & Funds Tables contains Wallets PK) making sure that each Wallet has more than one Fund type but, Every Fund has only one wallet.
+
+Funds and Users are not related as there is no point/scenario to fetch users funds directly without a wallet. It should not be done.
